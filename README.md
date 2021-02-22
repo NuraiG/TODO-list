@@ -1,2 +1,2 @@
 # TODO-list
-Simple todo list 
+Simple to do list application.
