@@ -1,0 +1,47 @@
+#addTask{
+    width: 30px;
+    height: 30px;
+}
+.deleteTask{
+    width: 30px;
+    height: 30px;
+    margin:1px;
+}
+*{
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px auto;
+}
+.currentTasks >p{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+}
+
+main{
+    margin: 0 auto;
+    text-align: center;
+}
+.currentTasks{
+    display: flex;
+    justify-content: space-between;
+}
+input[type="text" i] {
+    padding: 3px 6px;
+    border: none;
+    width: 300px;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+#list{
+    background-color: antiquewhite;
+    border: 10px dashed pink;
+    width: 500px;
+}
+.currentList{
+    margin: 0 5px;
+}

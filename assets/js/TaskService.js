@@ -1,30 +1,35 @@
 const taskManager = (function () {
 
     class Task {
-        constructor(name, id) {
+        constructor(name) {
             this.name = name;
-            this.id = id;
         }
     }
     class TaskManager {
         constructor() {
-            this.tasks = [];
+            if (localStorage.getItem('tasks')) {
+                this.tasks = JSON.parse(localStorage.getItem('tasks'));
+            } else {
+                this.tasks = [];
+                localStorage.setItem('tasks', JSON.stringify(this.tasks));
+            }
         }
         addTask(another) {
-            if (another instanceof Task) {
-                this.tasks.push(another);
-            }
+            let task = new Task(another);
+            this.tasks.push(task);
+            localStorage.setItem('tasks', JSON.stringify(this.tasks));
         }
         removeTask(another) {
             let index;
             for (let i = 0; i < this.tasks.length; i++) {
-                if (this.tasks.id === another.id) {
+                if (this.tasks.name === another.name) {
                     index = i;
                     break;
                 }
             }
             this.tasks.splice(index, 1);
+            localStorage.setItem('tasks', JSON.stringify(this.tasks));
         }
     }
     return new TaskManager();
-})
+})();
