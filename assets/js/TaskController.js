@@ -22,8 +22,7 @@
         });
     }
     function deleteIt(ev) {
-        let key = JSON.stringify((ev.target.parentElement.id));
-        let task = JSON.parse(localStorage.getItem(key));
+        let key = ev.target.parentElement.id;
         taskManager.removeTask((key));
         refresh();
     }

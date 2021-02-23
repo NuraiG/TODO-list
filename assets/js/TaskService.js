@@ -22,10 +22,11 @@ const taskManager = (function () {
         removeTask(another) {
             let index;
             for (let i = 0; i < this.tasks.length; i++) {
-                if (this.tasks.name === another.name) {
+                if (this.tasks[i].name === another) {
                     index = i;
                     break;
                 }
+                index=1;
             }
             this.tasks.splice(index, 1);
             localStorage.setItem('tasks', JSON.stringify(this.tasks));
