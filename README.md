@@ -3,7 +3,8 @@
 The browser's local storage\
 MVC design pattern\
 Handlebars templating\
-Simple to do list application\
+
+### Simple to do list application
 https://nuraig.github.io/TODO-list/\
 
 ![Screenshot 2021-03-14 153047](https://user-images.githubusercontent.com/33380708/111071295-2f884d00-84de-11eb-997a-f711b00faeb8.jpg)
