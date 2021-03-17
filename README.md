@@ -2,7 +2,7 @@
 ## A simple "To Do List" made using:
 The browser's local storage\
 MVC design pattern\
-Handlebars templating\
+Handlebars templating
 
 ### Simple to do list application
 https://nuraig.github.io/TODO-list/\
